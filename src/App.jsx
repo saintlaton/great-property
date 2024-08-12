@@ -18,7 +18,6 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Explore />} />
           <Route path="/offers" element={<Offers />} />
@@ -36,6 +35,7 @@ function App() {
           />
           <Route path="*" element={<NotFound />} /> {/* Fallback route */}
         </Routes>
+        <Navbar />
       </Router>
 
       <ToastContainer />
